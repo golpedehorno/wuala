@@ -14,6 +14,7 @@ else if (logoElegido==2){
 }
 else{
     logo.src= "estrella.gif"
+    document.getElementById("titulo").innerHTML=  "<br>";
 }
 
 
