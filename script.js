@@ -17,14 +17,9 @@ else{
 }
 
 
-
-console.log("naty")
-
-
 function cambiarColor(){
       titulo.style.color = "pink" ; 
 }
-
 
 
 //ENVIO GRATIS - cambiar valor en variable envioGratis y de var correo para que repercuta en el DOM
