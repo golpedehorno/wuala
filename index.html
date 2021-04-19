@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Yarema - Wuala Prueba Técnica</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="contenedor_flex">
+
+        <ul class="contenedor uno">
+            <li class="item rojo">Item 1</li>
+            <li class="item rojo">Item 2</li>
+            <li class="item rojo">Item 3</li>
+            <li class="item negrita">Item 4</li>
+            <li class="item negrita">Item 5</li>
+            <li class="item negrita">Item 6</li>
+            <li class="item icono">Item 7</li>
+            <li class="item icono">Item 8</li>
+            <li class="item icono">Item 9</li>
+        </ul>
+    
+        <div class="contenedor dos" >
+           
+           <h1 id="titulo"> </h1>
+    
+           <img id="logo" src="" alt="" >
+           
+           <br>
+           
+           <button id="boton" onclick="cambiarColor()"> Hacé tu vida color de rosa</button>
+        
+        </div>
+    
+    </div>
+
+    <div id="split" onLoad="crearSplit()" class="contenedor split">
+
+        <script>
+             document.write("Tan simple como: </br>");
+             document.write("</br>")
+
+             var cadenaDeValores = "Escribínos pidiendo un presupuesto, Recibí nuestra propuesta, Coordiná el inicio, Participá del proceso";
+             pasos = cadenaDeValores.split(",");            
+          
+               for(var i=0; i< pasos.length; i++){
+               document.write(" " + i + "--->" + pasos[i]+ "</br>")
+               }
+
+             document.write("</br>")
+             document.write("Con solo "+ pasos.length+ " pasos, estarás disfrutando de tu nueva tienda online :) ");          
+        
+        </script>
+            
+    </div>
+
+    <div class="contenedor envio">
+
+        <div id=”fichaproducto”>
+
+            <span class=”tarifa” >Envío gratis</span>
+            <span  id="tarifa1"></span>
+            
+        </div>
+            
+        <div id=”detalleproducto”>
+            
+            <span class=”tarifa”>A todo el país por Correo</span>
+            <span  id="tarifa2"></span>
+         </div>
+         
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
